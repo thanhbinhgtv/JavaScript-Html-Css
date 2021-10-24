@@ -1,0 +1,55 @@
+					Learn JavaScript
+1. Làm việc với array:
+ - length : Độ dài của mảng.
+ - toString() : Chuyển mảng về chuỗi.
+ - array.includes() : Kiểm tra một mảng xem nó có bao gồm giá trị cụ thể mà bạn cung cấp hay không.
+ - join() : Chuyển mảng về chuỗi, có thể thêm phân cách giữa các phần tử.
+ - pop() : Xóa element cuối mảng, và trả về phần tử đã xóa. (Khi xóa hết rồi thì trả về undefined).
+ - shift() : Xóa element đầu mảng, trả về phần tử đã xóa.
+ - push() : Thêm 1 hoặc nhiều element vào cuối mảng, trả về độ dài của mảng.
+ - unshift() : Thêm 1 hoặc nhiều element vào đầu mảng, trả về độ dài của mảng.
+ - splice(index, number, any) : Xóa, thêm, chèn, thay thế phần tử vào mảng.
+ - concat(array) : Nối Array.
+ - slice() : Cắt mảng và trả về mảng sau khi cắt.
+
+1.1. Array Methods:
+a. forEach() : Lặp qua tất cả các phần tử của mảng.
+b. every() : Lặp qua tất cả các phần tử của mảng. Chỉ cần 1 ông không thỏa mãn điều kiện sẽ trả về false.
+c. some() : Lặp qua tất cả các phần tử của mảng. Chỉ cần 1 ông thỏa mãn điều kiện sẽ trả về true.
+d. find() : Lặp qua tất cả các phần tử của mảng. Chả về ông đầu tiên thõa mãn và dừng luôn loop.
+e. filter() : Lặp qua tất cả các phần tử của mảng. Chả về tất cả ông nào thõa mãn điều kiện.
+g. map() : Tạo ra một array mới từ array ban đầu. Có thể chỉnh sửa các giá trị trả về cho array mới.
+h. reduce() :
+
+2. Làm việc với chuỗi:
+ - length: Độ dài của chuỗi.
+ - includes() : Kiểm tra xem một chuỗi xem nó có bao gồm giá trị cụ thể mà bạn cung cấp hay không.
+ - indexOf() : Kiểm tra giá trị cụ thể mà bạn nhập vào ở vị trí thứ mấy trong chuỗi.
+ - lastIndexOf() : Giống indexOf nhưng tìm vị trí thằng cuối cùng.
+ - search() : Giống indexOf nhưng hỗ trợ cả tìm theo biểu thức chính quy.
+ - slice() : Cắt chuỗi theo vị trí và trả về chuỗi mới sau cắt.
+ - replace() : Thay thế, ghi đè ký tự trong chuỗi, và trả về chuỗi mới.
+ - toUpperCase() : Chuyển tất cả ký tự trong chuỗi thành chữ HOA.
+ - toLowerCase() : Chuyển tất cả ký tự trong chuỗi thành chữ thường.
+ - trim() : Loại bỏ ký tự khoảng trắng thừa 2 đầu chuỗi.
+ - split(', ') : Chuyển chuỗi thành mảng.
+ - charAt(index) : Trả về ký tự theo vị trí trong chuỗi.
+
+3. Hàm:
+ - Declaration function :
+	function writeLog(message) {		- message : là tham số.
+		console.log(message);
+	};
+	writeLog('Hello World');		- Hello World: là đối số.
+
+ - Expresstion function :
+ - Arrow function :
+
+4. Loop :
+a. for : Lặp với điều kiện đúng.
+b. white : Lặp khi điều kiện đúng.
+c. do/white : Lặp ít nhất 1 lần, sau đó lặp với điều kiện đúng.
+d. for/in : Lặp qua key của đối tượng. (Object hoặc Array hoặc chuỗi có bao nhiêu Key
+	    thì lặp qua bấy nhiêu lần).
+e. for/of : Lặp qua value của đối tượng. (Array hoặc chuỗi hoặc Object có bao nhiêu Value
+	    thì lặp qua bấy nhiêu lần).
