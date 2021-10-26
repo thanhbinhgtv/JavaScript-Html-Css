@@ -1,8 +1,8 @@
-// Spread :
+// Spread :  Trãi 1 Array hoặc Object ra thành các element riêng biệt
     // Demo with Array :
     array1 = [1, 2, 3];
     array2 = [4, 5, 6];
-    array3 = [...array2, ...array1];
+    array3 = [...array2, ...array1];        // Spread trãi 1 mảng ra thành các element riêng biệt ( array3 = [1, 2, 3, 4, 5, 6]; )
 
     console.log(array3);                    // [4, 5, 6, 1, 2, 3]
 
