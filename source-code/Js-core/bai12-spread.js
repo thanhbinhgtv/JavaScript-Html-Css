@@ -42,3 +42,7 @@
     console.log(object3);                   // {name: 'Binh', age: 25, address: 'Ha Noi', gender: 'Male'}
     console.log(object4);                   // {name: 'Binh', age: 25, address: 'Ha Noi', gender: 'Female'}
     console.log(object5);                   // {name: 'Binh', age: 25, address: 'Ha Noi', gender: 'Male', Add: 'Add'}
+
+    // Destructure sử dụng để tạo ra một new variables từ array items, hoặc object properties
+    // Spread syntax sử dụng để unpack terables của một arrays, objects, và function calls
+    // Rest parameter là một cú pháp tạo ra một array từ một số lượng giá trị không xác định
