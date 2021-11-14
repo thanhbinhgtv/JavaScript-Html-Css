@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>invoices PDF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #wrap {
+            width: 794px;
+            min-height: 1123px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Header */
+        #header {
+            margin: 0 20px;
+            height: 180px;
+            border-bottom: 2px solid black;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        #header>.clix {
+            width: 70%;
+            margin: 6px;
+        }
+
+        #header>.text {
+            width: 30%;
+            margin: 6px;
+        }
+
+        #header>.clix>.logo {
+            width: 40px;
+            height: 40px;
+            background-color: #253a45;
+            color: white;
+            transform: rotate(45deg);
+            display: inline-block;
+        }
+
+        #header>.clix>.text {
+            position: relative;
+            bottom: 13px;
+            left: 17px;
+            display: inline-block;
+        }
+        
+        #header>.clix .logo {
+            display: inline-block;
+        }
+
+        #header .logo p {
+            font-size: 14px;
+            font-weight: 700;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 30%;
+            left: 15%;
+        }
+
+        /* Summary */
+        #summary {
+            margin: 0 20px;
+            min-height: 100px;
+            border-bottom: 2px solid black;
+            display: flex;
+        }
+
+        #summary .text-sm {
+            width: 60%;
+        }
+
+        #summary .text {
+            width: 40%;
+        }
+
+        /* Company */
+        #company,
+        #billing {
+            margin: 0 20px;
+            /* border-bottom: 2px solid black; */
+            display: flex;
+        }
+
+        #company .text-1,
+        #billing .text-1 {
+            width: 60%;
+        }
+
+        #company .text-2,
+        #billing .text-2 {
+            width: 40%;
+        }
+
+        /* total-Paid */
+        #total-Paid {
+            min-height: 140px;
+            margin: 20px;
+            display: flex;
+            border: 2px solid #00696D;
+        }
+
+        #total-Paid .text-left {
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .text-left .text-1 {
+            margin: 15px;
+        }
+
+        .text-right .text-1 {
+            margin: 15px;
+        }
+
+        .text-left .text-1 p,
+        .text-left .text-2 p,
+        .text-right .text-1 p,
+        .text-right .text-2 p
+         {
+            margin-top: 5px;
+        }
+
+        #total-Paid .text-right {
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Table */
+        #table {
+            margin: 80px 20px 0 20px;
+        }
+
+        #table table {
+            width: 100%;
+            border: 2px dashed #00696D;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        #table table tr {
+            height: 35px;
+        }
+
+        #table thead tr th{
+            border-bottom: 2px solid #283E4A;
+        }
+        #table tbody tr td{
+            border-bottom: 1px solid #283E4A;
+        }
+
+        #table tbody tr td:nth-child(1) {
+            width: 40%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="clix">
+                <div class="logo">
+                    <p>Logo</p>
+                </div>
+                <div class="text">
+                    <p style="font-size: 20px; font-weight: 700">CLIX</p>
+                </div>
+            </div>
+
+            <div class="text" style="margin-bottom: 5px">
+                <p style="float: right; font-size: 20px; font-weight: 700; margin-bottom: 7px">
+                    Tax Invoice / Receipt
+                </p>
+                <p style="float: right">ABN: 99 109 003 00</p>
+            </div>
+        </div>
+        <!-- header -->
+        <div id="summary">
+            <div class="text-sm">
+                <p style="font-size: 20px; font-weight: 700; margin: 32px 0 0 23px; ">
+                    Summary
+                </p>
+            </div>
+            <div class="text" style="margin: 25px 0 0 0;">
+                <p style="margin-bottom: 10px;">Invoice Number: AT-123456660 </p>
+                <p>Date Issued: jul 03, 2020</p>
+            </div>
+        </div>
+        <!-- summary -->
+        <div id="company">
+            <div class="text-1">
+                <p style="font-size: 20px; font-weight: 700; margin: 32px 0 0 23px; ">
+                    Company Name:
+                </p>
+                <p style="margin: 0 0 0 23px; width: 60%;">
+                    FLS
+                </p>
+            </div>
+            <div class="text-2" style="margin: 30px 0 0 0;">
+                <p style="margin-bottom: 10px; font-size: 20px; font-weight: 700;">Contact</p>
+                <p>Date Issued: jul 03, 2020 Invoice Number: AT-123456660</p>
+            </div>
+        </div>
+        <!-- company -->
+        <div id="billing">
+            <div class="text-1">
+                <p style="font-size: 20px; font-weight: 700; margin: 32px 0 0 23px; ">
+                    Billing Address:
+                </p>
+                <p style="margin: 0 0 0 23px; width: 60%;">
+                    3rd Zagorodny pereulok, 4v-41 Minsk HM 280098 Belarus Tax ID: 99999999
+                </p>
+            </div>
+            <div class="text-2" style="margin: 30px 0 0 0;">
+                <p style="margin-bottom: 10px; font-size: 20px; font-weight: 700;">Delivery Address:</p>
+                <p>Date Issued: jul 03, 2020</p>
+            </div>
+        </div>
+        <div id="total-Paid">
+            <div class="text-left">
+                <div class="text-1">
+                    <p>Total Paid:</p>
+                    <p>Payment Received:</p>
+                    <p>Credit Card Number:</p>
+                    <p>Cardholder's Name:</p>
+                </div>
+                <div class="text-2">
+                    <p>USD 999.99</p>
+                    <p>-USD 999.99</p>
+                    <p>xxxxxxxxxxxx1234</p>
+                    <p>SHWAN SHWAN</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-1">
+                    <p>Date Paid:</p>
+                    <p>Amount Now Due:</p>
+                </div>
+                <div class="text-2">
+                    <p>Jul 03, 2020</p>
+                    <p>USD 0.00</p>
+                </div>
+            </div>
+        </div>
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subsciption May</td>
+                        <td>1</td>
+                        <td>10.00</td>
+                        <td>10.00y</td>
+                    </tr>
+                    <tr>
+                        <td>Subsciption May</td>
+                        <td>5</td>
+                        <td>10.00</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subsciption May</td>
+                        <td>1</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subsciption May</td>
+                        <td>1</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subsciption May</td>
+                        <td>1</td>
+                        <td>Free</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subsciption May</td>
+                        <td>1</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="thank" style="position: absolute; bottom: 20px; right: 20px;">
+            <p style="float: right; font-size: 18px; margin-right: 20px;">
+                Thank For Your Payment!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
