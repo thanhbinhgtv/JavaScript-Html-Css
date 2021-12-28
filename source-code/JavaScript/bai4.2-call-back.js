@@ -12,5 +12,6 @@ courses.map2((course, index) => {
     console.log(index, course);
 });
 
-console.log(false || 'text');
-console.log(false && 'box');
+const a = function(...rest){
+    console.log(rest[1] + rest);
+}(3, 4)
