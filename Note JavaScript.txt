@@ -11,6 +11,7 @@
  - splice(index, number, any) : Xóa, thêm, chèn, thay thế phần tử vào mảng.
  - concat(array) : Nối Array.
  - slice() : Cắt mảng và trả về mảng sau khi cắt.
+ - indexOf() : dùng để tìm kiếm một phần tử trong mảng dựa vào giá trị truyền vào tham số của hàm.
 
 1.1. Array Methods:
 a. forEach() : Lặp qua tất cả các phần tử của mảng.
