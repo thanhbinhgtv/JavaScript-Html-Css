@@ -17,3 +17,8 @@ const { location: { search } } = history;   // ????
 
 // <div className={[class1, class2, class3]}></div> : Multiple Class (Test lai)
 // <div className={`${s.companyButtonContainer} ${s.roleButton} ${s.ruleName} mr-3`}></div> : Multiple Class
+
+// -----------------------------
+
+console.log(response); //String : {"responsibilities":"Driver","companyId":"6232ee4ccf57a0002b610a3d","id":"6232ee4dcf57a0002b610a44"}
+JSON.parse(response)   //Trở thành Object
